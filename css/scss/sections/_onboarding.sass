@@ -1,69 +1,40 @@
-.f1-steps
-  overflow: hidden
-  margin-top: 1em
-  text-align: center
-  margin: 1em auto 0
-  width: 5em
+.f1
+  .f1-steps
+    overflow: hidden
+    margin-top: 1em
+    text-align: center
+    margin: 1em auto 0
+    width: 5em
 
-.f1-step
-  position: relative
-  float: left
-  width: 1em
-  padding: 0 .5em
-  text-align: center
+    .f1-step
+      position: relative
+      float: left
+      width: 1em
+      padding: 0 .5em
+      text-align: center
 
-.f1-step-icon
-  display: inline-block
-  width: 0.5em
-  height: 0.5em
-  margin-top: 4px
-  background: $gray-color
-  border-radius: 50%
+      &.activated .f1-step-icon
+        background: $primary-color
+      &.active .f1-step-icon
+        background: $primary-color
+      p
+        color: #ccc
+      &.activated p, &.active p
+        color: #f35b3f
 
-.f1-step
-  &.activated .f1-step-icon
-    background: $primary-color
-  &.active .f1-step-icon
-    background: $primary-color
-  p
-    color: #ccc
-  &.activated p, &.active p
-    color: #f35b3f
+      .f1-step-icon
+        display: inline-block
+        width: 0.5em
+        height: 0.5em
+        margin-top: 4px
+        background: $gray-color
+        border-radius: 50%
+  fieldset
+    display: none
+    text-align: left
 
-.f1 fieldset
-  display: none
-  text-align: left
+  .form-footer
+    text-align: right
 
-.form-footer
-  text-align: right
-
-.f1 .input-error
-  border-color: #f35b3f
-
-@media (min-width: 992px) and (max-width: 1199px)
-
-@media (min-width: 768px) and (max-width: 991px)
-
-@media (max-width: 767px)
-  .navbar
-    padding-top: 0
-    &.navbar-no-bg
-      background: #333
-      background: rgba(51, 51, 51, 0.9)
-  .navbar-brand
-    height: 60px
-    margin-left: 15px
-  .navbar-collapse
-    border: 0
-  .navbar-toggle
-    margin-top: 12px
-  .top-content
-    padding: 40px 0 110px 0
-
-@media (max-width: 415px)
-  h1, h2
-    font-size: 32px
-  .f1
-    padding-bottom: 20px
-  .f1-buttons button
-    margin-bottom: 5px
+  .input-error
+    border-color: #f35b3f

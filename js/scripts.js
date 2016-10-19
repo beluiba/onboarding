@@ -103,3 +103,32 @@ jQuery(document).ready(function() {
     
     
 });
+
+$(function () {
+        // Initialize invites
+        var invites = [];
+        // Hide message by default
+        $('.invite').hide();
+        // Handle invite form submission
+        $('.f1').submit(function () {
+          // Add current invite to list
+          invites.push($('#email').val());
+          // Clean input
+          $('#email').val('');
+          // Always clean invite list content
+          var invitesContent = '';
+          // Re-draw the invite list
+          invites.forEach(function (invite) {
+            invitesContent += '<li><p> <i class="icon fa fa-smile-o"></i>' + invite + '</p></li>';
+          });
+          // Show message
+          $('.invite').show()
+          // Add list items
+          $('.invites').html(invitesContent);
+          
+          return false;
+        });
+      }());
+
+
+

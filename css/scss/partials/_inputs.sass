@@ -1,11 +1,10 @@
 input
 	&[type="text"], &[type="password"], &[type="email"], &[type="tel"], &[type="date"]
 
-		padding: 1em
+		padding: 0
 		outline-width: 0
 		border: none
 		border-bottom: solid 1px $secondary-color
-		height: 3.5em
 		position: relative
 		background-color: transparent
 		color: $text
@@ -13,6 +12,7 @@ input
 		margin-top: 0.3em
 		border-radius: 0
 		@extend .light
+		width: 100%
 
 		&:focus
 			border: none
@@ -33,3 +33,24 @@ input
 	&[type="text"], &[type="password"], &[type="email"], &[type="tel"], &[type="date"]
 		@include placeholder
 			color: $secondary-color
+
+
+.item-input
+	input
+		width: 75%
+		display: inline-block
+		float: left
+
+	button
+		@extend .btn
+		width: 25%
+		@extend .center
+		color: $primary-color
+		background-color: transparent
+		display: inline-block
+		border-color: transparent
+		&:hover
+			border-color: transparent
+			color: $darkgray-color
+		&:focus
+			border-color: transparent
