@@ -1,72 +1,18 @@
-.button
+.btn
 	cursor: pointer
-	@extend .bold
+	font-family: $body-font
 	@extend .uppercase
 	@extend .border
 	font-size: 1.2em
 	padding: 0.75em 1.5em
-
-	&.button-primary
-		background-color: $primary-color
-		&:hover, &:focus
-			background-color: $primary-color-dark
-
-	&.button-secondary
-		background-color: $opacity-bg-input-disabled
-		&:hover, &:focus
-			background-color: $darkgray-color-very-dark
-	&.button-full
-		width: 100%
-		margin: 1em 0
-		span
-			font-size: 0.9em
-			display: inline-block
-			top: -1px
-			position: relative
-
-			&:before
-				margin-right: 0.5em
-
-	&.button-form
-		background-color: $darkgray-color
-
-
-	&:hover
+	width: 100%
+	margin: 1em 0
+	background-color: $primary-color
+	color: $white
+	
+	&:hover, &:focus
+		background-color: $primary-color-dark
 		opacity: 0.9
-
-	&[disabled="disabled"]
-		background-color: $darkgray-color-light
-		color: $gray-color-light
-		&:hover
-			background-color: $darkgray-color-light
-			color: $gray-color-light
-			-webkit-transform: translateY(0px)
-			-moz-transform: translateY(0px)
-			transform: translateY(0px)
-			box-shadow: none
-
-	&:before
-		font-size: 1.2em
-		margin-right: 0.2em
-
-	&.odd
-		padding: 0.5em
-		margin-top: 1.1em
-
-
-.preview.ng-hide + .icon + .button-odd
-	@extend .border
-	&.button-primary
-		color: $primary-color
-		background-color: transparent
-	&.button-secondary
-		color: $white
-		background-color: transparent
-
-
-
-.alert, .link
-	background-color: $alert-color
 
 
 

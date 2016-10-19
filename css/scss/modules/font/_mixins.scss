@@ -1,4 +1,4 @@
-@mixin fontdef($StrivePath, $FontType:"Regular") {
+@mixin fontdef($StrivePath, $FontType: "Medium" ) {
   src:  url('#{$StrivePath}/#{$FontType}/Strive-#{$FontType}.eot');
   src:  url('#{$StrivePath}/#{$FontType}/Strive-#{$FontType}.eot?#iefix') format('embedded-opentype'),
         url('#{$StrivePath}/#{$FontType}/Strive-#{$FontType}.woff2') format('woff2'),
