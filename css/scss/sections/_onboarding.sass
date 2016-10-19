@@ -29,12 +29,41 @@
         margin-top: 4px
         background: $gray-color
         border-radius: 50%
+  
   fieldset
     display: none
     text-align: left
+
+    iframe
+      width: 100%
+      min-height: 40vh
+      border: none
+
+    .f1-buttons
+      display: inline-block
+      width: 100%
+    
+    .sub-title
+      font-size: 1.2em
+      color: $gray-color
+      @extend .regular
+
+    .invites
+      padding: 0
+      li
+        margin: 0.5em 0
+
+        i
+          float: left
+        p
+          float: left
+          margin-top: 0.2em
+
 
   .form-footer
     text-align: right
 
   .input-error
-    border-color: #f35b3f
+    border-color: $warning-color
+
+

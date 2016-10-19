@@ -119,7 +119,7 @@ $(function () {
           var invitesContent = '';
           // Re-draw the invite list
           invites.forEach(function (invite) {
-            invitesContent += '<li><p> <i class="icon fa fa-smile-o"></i>' + invite + '</p></li>';
+            invitesContent += '<li><i class="icon fa fa-smile-o"></i><p> ' + invite + '</p></li>';
           });
           // Show message
           $('.invite').show()
