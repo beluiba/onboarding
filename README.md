@@ -1,2 +1,2 @@
 # onboarding
-onboarding with foundation + sass
+onboarding with bootstrap + sass
