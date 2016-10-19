@@ -65,7 +65,7 @@ body {
   font-family: "Carnac-Regular";
 }
 
-.light, p, .btn.link, .item-input button.link, input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="date"] {
+.light, p, .btn.link, .item-input button.link, input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="date"], .f1 fieldset .radio label {
   font-family: "ProximaNova-Light";
 }
 
@@ -3516,6 +3516,10 @@ h4 {
 .f1 fieldset .sub-title {
   font-size: 1.2em;
   color: #b5b5b5;
+}
+.f1 fieldset .sub-title.center, .f1 fieldset .item-input button.sub-title, .item-input .f1 fieldset button.sub-title {
+  margin-top: 1em;
+  text-align: center;
 }
 .f1 fieldset .invites {
   padding: 0;
