@@ -1,0 +1,72 @@
+input
+	&[type="text"], &[type="password"], &[type="email"], &[type="tel"], &[type="date"]
+
+		padding: 1em
+		@extend .border
+		height: 3.5em
+		position: relative
+		background-color: $opacity-bg-input
+		color: $text
+		z-index: 10
+		box-shadow: none
+		margin-top: 0.3em
+
+		&.item
+			&.not-required
+				&.item-input
+					@extend .border
+
+		&:focus
+			background-color: $opacity-bg-input
+			border-color: $text
+		&.item
+			&.item-input
+				&[disabled="disabled"]
+					border: none
+					background-color: $opacity-bg-input-disabled
+
+
+
+
+
+select
+	@extend .border
+	height: 3.5em
+	position: relative
+	background-color: $opacity-bg-input
+	color: $text
+	z-index: 10
+	box-shadow: none
+	margin-top: 0.3em
+
+	&:focus
+		background-color: $opacity-bg-input
+		border-color: $text
+
+	option
+		background-color: $opacity-bg-input
+		@extend .light
+
+
+
+
+
+@mixin placeholder 
+	&::-webkit-input-placeholder
+		@content
+	&:-moz-placeholder
+		@content
+	&::-moz-placeholder
+		@content
+	&:-ms-input-placeholder
+		@content
+
+
+input
+	@include placeholder
+		font-size: 1em
+		color: $text-placeholder
+select
+	@include placeholder
+		font-size: 1em
+		color: $text-placeholder

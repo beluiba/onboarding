@@ -1,0 +1,64 @@
+@media screen and (min-width: 100px) and (max-width: 1024px) 
+	body
+		> div
+			form
+				&.main-container
+					margin-bottom: 4em
+					.row
+						span
+							&.captcha
+								max-height: 5em
+								img
+									max-width: 40%
+									height: 5em
+
+								.button
+									padding: 0 1em
+
+
+@media screen and (min-width: 100px) and (max-width: 600px) 
+	body
+		> div
+			overflow-y: scroll
+			-webkit-overflow-scrolling: touch
+			padding-top: 2em
+			form
+				&.main-container
+					.row
+						.size
+							.shirts
+								.icon
+									width: 18.5%
+
+						span
+							&.captcha
+								max-height: 5em
+								img
+									max-width: 40%
+									min-height: auto
+
+								.button
+									padding: 0 1em
+						.license
+							.icon
+								&.driver-required
+									top: 5.5em
+							.item
+								&.item-select
+									width: 100%
+									margin-bottom: 0
+								&.item-input
+									width: 100%
+									margin-top: 0
+
+
+@media screen and (min-width: 0px) and (max-width: 395px) 
+	body
+		> div
+			form
+				&.main-container
+					.row
+						.license
+							.icon
+								&.driver-required
+									top: 6.5em

@@ -1,0 +1,141 @@
+$aqua: #1DBCBD
+$blue: #004C7A
+$orange: #fc7647
+$red: #ff4130
+$green: #30ce42
+
+
+$white: #fff
+$primary-color: $aqua
+$secondary-color: $blue
+$alert-color: $red
+$warning-color: $orange
+$success-color: $green
+$gray-color: grayscale($primary-color)
+$darkgray-color: grayscale($secondary-color)
+$lightgray-color: grayscale(lighten($primary-color, 50%))
+
+//lighten
+$primary-color-light: lighten($primary-color, 10%)
+$primary-color-light1: lighten($primary-color, 20%)
+$primary-color-light2: lighten($primary-color, 30%)
+$primary-color-light3: lighten($primary-color, 40%)
+$primary-color-light4: lighten($primary-color, 50%)
+$primary-color-very-light: lighten($primary-color, 60%)
+
+$secondary-color-light: lighten($secondary-color, 10%)
+$secondary-color-light1: lighten($secondary-color, 20%)
+$secondary-color-light2: lighten($secondary-color, 30%)
+$secondary-color-light3: lighten($secondary-color, 40%)
+$secondary-color-light4: lighten($secondary-color, 50%)
+$secondary-color-very-light: lighten($secondary-color, 60%)
+
+$alert-color-light: lighten($alert-color, 10%)
+$alert-color-light1: lighten($alert-color, 20%)
+$alert-color-light2: lighten($alert-color, 30%)
+$alert-color-light3: lighten($alert-color, 40%)
+$alert-color-light4: lighten($alert-color, 50%)
+$alert-color-very-light: lighten($alert-color, 60%)
+
+$gray-color-light: lighten($gray-color, 30%)
+$gray-color-very-light: lighten($gray-color, 50%)
+
+$darkgray-color-light: lighten($darkgray-color, 20%)
+$darkgray-color-very-light: lighten($darkgray-color, 50%)
+
+
+//darken
+$primary-color-dark: darken($primary-color, 20%)
+$primary-color-very-dark: darken($primary-color, 50%)
+
+$secondary-color-dark: darken($secondary-color, 5%)
+$secondary-color-very-dark: darken($secondary-color, 25%)
+
+$alert-color-dark: darken($alert-color, 20%)
+$alert-color-very-dark: darken($alert-color, 50%)
+
+$gray-color-dark: darken($gray-color, 20%)
+$gray-color-very-dark: darken($gray-color, 50%)
+
+$darkgray-color-dark: darken($darkgray-color, 7%)
+$darkgray-color-very-dark: darken($darkgray-color, 15%)
+
+
+//faded
+$primary-color-faded: transparentize($primary-color, .5)
+$primary-color-very-faded: transparentize($primary-color, .8)
+
+$secondary-color-faded: transparentize($secondary-color, .5)
+$secondary-color-very-faded: transparentize($secondary-color, .8)
+
+$alert-color-faded: transparentize($alert-color, .5)
+$alert-color-very-faded: transparentize($alert-color, .8)
+
+$gray-color-faded: transparentize($gray-color, .5)
+$gray-color-very-faded: transparentize($gray-color, .8)
+
+$darkgray-color-faded: transparentize($darkgray-color, .5)
+$darkgray-color-very-faded: transparentize($darkgray-color, .8)
+
+
+
+// panels colors formed with the secondary
+
+$secondary-color-mix-one: desaturate(lighten($secondary-color, 28), 16)
+$secondary-color-mix-two: desaturate(lighten($secondary-color, 46), 16)
+$secondary-color-mix-three: lighten(desaturate($secondary-color, 6), 34)
+$secondary-color-mix-four: lighten(desaturate($secondary-color, 6), 59)
+$secondary-color-mix-five: lighten(desaturate($secondary-color, 6), 65)
+$secondary-color-mix-six: lighten(saturate($secondary-color, 10), 9)
+$secondary-color-mix-seven: lighten(saturate($secondary-color, 4), 53)
+
+
+
+$opacity-bg: rgba($primary-color, 0.9)
+$opacity-bg-input-disabled: rgba($darkgray-color, 0.6)
+$opacity-white: rgba($white, 0.9)
+$opacity-bg-dark: rgba($primary-color-dark, 0.6)
+$opacity-bg-modal: rgba($primary-color-dark, 0.9)
+$opacity-bg-input: $opacity-white
+
+$text: $darkgray-color
+$text-placeholder: rgba($text, 0.6)
+$opacity-focus: rgba($white, 0.5)
+
+
+.opacity-bg
+	background-color: $opacity-bg
+
+//attributes
+
+.odd-div
+	background-color: $opacity-bg-dark
+
+	h1, h2, h3, h4, h5, h6, span, a
+		color: $darkgray-color
+
+	tr
+		background-color: transparent
+
+	.title-panel
+		border-bottom: solid 1px $gray-color-light
+
+
+.required
+	color: $warning-color
+
+h1, h2, h3, h4, h5, h6, label
+	color: $white
+
+
+
+a
+	color: $darkgray-color
+
+	&:hover
+		color: $primary-color-dark
+
+
+.focus
+	border: solid 2px $gray-color
+	background-color: $opacity-bg-input

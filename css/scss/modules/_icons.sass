@@ -1,0 +1,37 @@
+@import "icons/variables"
+@import "icons/mixins"
+@import "icons/path"
+@import "icons/core"
+@import "icons/larger"
+@import "icons/fixed-width"
+@import "icons/list"
+@import "icons/bordered-pulled"
+@import "icons/animated"
+@import "icons/rotated-flipped"
+@import "icons/stacked"
+@import "icons/icons"
+@import "icons/screen-reader"
+
+
+.icon
+	&:before
+		font-size: 1.3em
+		margin-right: 0.25em
+
+
+	&.ion-ios-help-outline
+		&:before
+			margin-right: 0
+
+.not-button
+	&.icon
+		background: transparent
+		padding: 0.1em
+		color: $secondary-color
+		margin-bottom: 0
+		font-size: 0.8em
+		opacity: 0.8
+
+		&:hover
+			opacity: 1
+

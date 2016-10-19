@@ -1,0 +1,309 @@
+body
+	overflow: hidden
+	position: relative
+	background-image: url(../img/bg.jpg)
+	background-repeat: no-repeat
+
+	> div
+		height: 100vh
+		overflow: auto
+		width: auto
+
+		.main-container
+
+			@extend .opacity-bg
+			max-width: 62.5rem
+			width: 100%
+			margin: 0 auto
+			padding: 0.5em 0 0
+
+
+
+		.row
+			margin-top: 0.5em
+
+			.training
+				img
+					margin: 1em 1em 2em
+
+			&.footer
+				position: relative
+				.logo
+					padding: 0.5em 1em 0 0
+					float: left
+					position: relative
+					max-width: 18em
+				
+				.more-info
+					float: right
+					margin-top: 2em
+
+					a
+						text-decoration: underline
+
+			h6
+				&.required
+					@extend .bold
+					@extend .border
+					@extend .uppercase
+					background-color: $opacity-bg-input
+					font-size: 0.7em
+					padding: 0.5em
+					display: inline-block
+					&:before
+						margin-top: 0.2em
+
+			.field
+
+				select.ng-invalid + i + p + .job-description
+					display: none
+
+				.job-description
+					background-color: $opacity-bg-dark
+					font-size: 0.8em
+					line-height: 1.6em
+					margin: 0 0 1.5em
+					padding: 0.5em
+					border-radius: 0.2em
+
+				label
+					font-size: 0.75em
+					font-family: $body-font-medium
+					cursor: auto
+
+				&.address
+					.item
+						z-index: 50
+					.angucomplete-holder
+						position: relative
+					.angucomplete-dropdown
+						position: absolute
+						width: 100%
+						z-index: 20
+						max-height: 7em
+						min-height: 2em
+						overflow: auto
+						padding: 0
+						margin: 0
+						background-color: $opacity-bg-modal
+						color: $white
+						top: 3em
+						border-bottom-left-radius: 0.2em
+						border-bottom-right-radius: 0.2em
+
+						.angucomplete-row
+							padding: 1em
+							cursor: pointer
+
+							&:hover
+								background-color: $primary-color
+
+						//special validation for the address autocomplete input
+
+					input
+						&.item
+							&.hidden-input
+								background-color: transparent
+
+					.hasFocus + input + i + p
+						display: none
+								
+								
+								
+
+
+
+			
+			.headlines
+				margin: 2em 0
+			
+			span
+				&.captcha
+					margin: 0.5em 0
+					width: 100%
+					display: inline-block
+					height: 5em
+					overflow: hidden
+
+					img
+						width: 70%
+						min-height: 5em
+
+					.button
+						max-width: 30%
+						height: 4.25em
+						margin: 0
+						padding: 1em 0.75em
+						line-height: 0.9em
+						font-size: 1.2em
+						background-color: $darkgray-color
+						&:before
+							margin-right: 0
+							margin-left: 0.1em
+
+			.size
+				.label-size
+					max-width: 85%
+				.icon
+					z-index: 0
+
+				.box
+					margin-top: 0
+					padding: 0.75em 1em 0.5em
+
+				.shirts
+					display: inline-block
+					width: 100%
+					margin: 0.3em 0 0
+					padding-bottom: 1em
+
+
+					.icon
+						display: inline-block
+						width: 19%
+						margin-top: 1em
+						label
+							cursor: pointer
+							user-select: none
+							-webkit-user-select: none
+							-webkit-touch-callout: none
+							width: 100%
+
+							input
+								visibility: hidden
+								position: absolute
+								
+								&:checked + i.shirt
+
+									background: url(/forms/img/tshirt-on.svg) no-repeat center
+									color: $white
+							i
+								height: 3.5em
+								width: 100%
+								display: inline-block
+								text-align: center
+								padding-top: 1.1em
+								padding-left: 0.1em
+								@extend .bold
+								font-style: normal
+
+								&.shirt-off
+
+									background: url(../img/tshirt-off.svg) no-repeat center
+									color: $text
+
+							
+
+
+
+							&:hover,
+								i
+									background: url(../img/tshirt-on.svg) no-repeat center
+									color: $white
+
+
+				
+			.license
+				.item
+					display: inline-block
+					float: left
+
+					&.item-select
+						width: 50%
+						border-bottom-right-radius: 0
+						border-top-right-radius: 0
+
+
+					&.item-input
+						width: 50%
+						border-bottom-left-radius: 0
+						border-top-left-radius: 0
+						margin-left: -1px
+						float: right
+
+				
+
+				.license-error
+					width: 50%
+					float: right
+					margin-left: -1px
+
+			.upload	
+				margin-bottom: 1em
+				.uploaded-img
+					@extend .button-odd
+					@extend .border
+					border-color: $white
+					color: $white
+					background-color: transparent
+					height: auto
+					width: 100%
+					padding: 0
+					text-align: center
+					margin-top: 0.3em
+					position: relative
+
+					&.hasPhoto
+						border-color: $success-color
+
+					&:hover
+						opacity: 0.7
+
+					.required-input
+						top: 0.8em
+						right: 1em
+
+					h6
+						padding: 0.5em
+						font-size: 0.9em
+						color: $white
+						margin-bottom: 0.5em
+
+					&:hover
+						background-color: transparent
+
+					.preview
+						padding: 0.5em
+
+					.preview.ng-hide + .icon + .button-upload
+						border: 0.5em
+
+					.file-upload
+						position: absolute
+						width: 100%
+						opacity: 0
+						left: 0
+						bottom: 0
+						height: 3.5em
+						margin: 0
+						cursor: pointer
+
+					.button-upload
+						width: 100%
+						height: 3em
+						padding: 0.2em 2.35em
+						margin: 0
+						font-size: 1em
+						@extend .border
+						color: $white
+						&:hover
+							color: $opacity-white
+
+				.box
+					margin-top: 0
+					padding-top: 0.75em
+
+		.container
+
+			&.odd
+				@extend .odd-div
+				overflow: hidden
+				padding: 0.75em 0
+				@extend .border
+				margin: 0 0.9375rem 1rem
+				h5
+					font-size: 1.1em
+					color: $gray-color-very-light
+					font-family: $body-font-light
+
+

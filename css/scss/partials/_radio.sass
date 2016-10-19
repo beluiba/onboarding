@@ -1,0 +1,29 @@
+input
+	&[type="radio"]
+		height: 1.5em
+		width: 1.5em
+
+input[type=radio]
+	&.icon 
+		border: 0
+		clip: rect(0 0 0 0)
+		overflow: hidden
+		padding: 0
+
+		&.radio
+		
+			&.disapproved
+				&:checked
+					&:before 
+						background-color: $secondary-color-mix-five
+						color: $secondary-color
+						padding: 0 0.1em
+						font-size: 1.5em
+				
+			&.approved
+				&:checked
+					&:before 
+						background-color: $secondary-color-mix-five
+						color: $primary-color
+						padding: 0 0.1em
+						font-size: 1.5em
