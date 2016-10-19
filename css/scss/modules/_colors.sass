@@ -1,6 +1,6 @@
 $aqua: #1bcea9
 $blue: #5a6981
-$lightgray-color: f7f8fb
+$lightgray-color: #f7f8fb
 $gray-color: #b5b5b5
 $white: #fff
 
@@ -31,9 +31,13 @@ $opacity-bg-dark: rgba($primary-color-dark, 0.6)
 $opacity-bg-modal: rgba($primary-color-dark, 0.9)
 $opacity-bg-input: $opacity-white
 
-$text: $darkgray-color
-$text-placeholder: rgba($text, 0.6)
+$text: $secondary-color
+$text-placeholder: $lightgray-color
 $opacity-focus: rgba($white, 0.5)
+
+body
+	background-color: $lightgray-color
+	color: $text
 
 
 .opacity-bg

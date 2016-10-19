@@ -2,56 +2,24 @@ input
 	&[type="text"], &[type="password"], &[type="email"], &[type="tel"], &[type="date"]
 
 		padding: 1em
-		@extend .border
+		outline-width: 0
+		border: none
+		border-bottom: solid 1px $secondary-color
 		height: 3.5em
 		position: relative
-		background-color: $opacity-bg-input
+		background-color: transparent
 		color: $text
 		z-index: 10
-		box-shadow: none
 		margin-top: 0.3em
-
-		&.item
-			&.not-required
-				&.item-input
-					@extend .border
-
-		&:focus
-			background-color: $opacity-bg-input
-			border-color: $text
-		&.item
-			&.item-input
-				&[disabled="disabled"]
-					border: none
-					background-color: $opacity-bg-input-disabled
-
-
-
-
-
-select
-	@extend .border
-	height: 3.5em
-	position: relative
-	background-color: $opacity-bg-input
-	color: $text
-	z-index: 10
-	box-shadow: none
-	margin-top: 0.3em
-
-	&:focus
-		background-color: $opacity-bg-input
-		border-color: $text
-
-	option
-		background-color: $opacity-bg-input
+		border-radius: 0
 		@extend .light
 
+		&:focus
+			border: none
+			border-bottom: solid 2px $secondary-color 
 
 
-
-
-@mixin placeholder 
+@mixin placeholder
 	&::-webkit-input-placeholder
 		@content
 	&:-moz-placeholder
@@ -60,13 +28,8 @@ select
 		@content
 	&:-ms-input-placeholder
 		@content
-
-
+	
 input
-	@include placeholder
-		font-size: 1em
-		color: $text-placeholder
-select
-	@include placeholder
-		font-size: 1em
-		color: $text-placeholder
+	&[type="text"], &[type="password"], &[type="email"], &[type="tel"], &[type="date"]
+		@include placeholder
+			color: $secondary-color

@@ -13,25 +13,22 @@
 @import "icons/screen-reader"
 
 
+$icon-font:'FontAwesome'
+
+
 .icon
 	&:before
+		font-family: $icon-font
 		font-size: 1.3em
 		margin-right: 0.25em
+		float: left
+		line-height: 1.35em
 
 
-	&.ion-ios-help-outline
+	&.right
 		&:before
+			float: right
+			margin-left: 0.25em
 			margin-right: 0
 
-.not-button
-	&.icon
-		background: transparent
-		padding: 0.1em
-		color: $secondary-color
-		margin-bottom: 0
-		font-size: 0.8em
-		opacity: 0.8
-
-		&:hover
-			opacity: 1
 
