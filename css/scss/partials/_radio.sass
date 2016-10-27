@@ -3,18 +3,3 @@ input
 		height: 1.5em
 		width: 1.5em
 
-input[type=radio]
-
-	&.radio
-		&+ i
-			visibility: hidden
-			float: left
-		&:checked
-			&:before 
-				visibility: hidden
-			&+ i
-				@extend .fa-circle
-				background-color: $secondary-color-dark
-				color: $secondary-color
-				padding: 0 0.1em
-				font-size: 1.5em

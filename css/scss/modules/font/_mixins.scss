@@ -1,8 +1,8 @@
-@mixin fontdef($StrivePath, $FontType: "Medium" ) {
-  src:  url('#{$StrivePath}/#{$FontType}/Strive-#{$FontType}.eot');
-  src:  url('#{$StrivePath}/#{$FontType}/Strive-#{$FontType}.eot?#iefix') format('embedded-opentype'),
-        url('#{$StrivePath}/#{$FontType}/Strive-#{$FontType}.woff2') format('woff2'),
-        url('#{$StrivePath}/#{$FontType}/Strive-#{$FontType}.woff') format('woff'),
-        url('#{$StrivePath}/#{$FontType}/Strive-#{$FontType}.ttf?') format('truetype'),
-        url('#{$StrivePath}/#{$FontType}/Strive-#{$FontType}.svg##{$FontType}') format('svg');
+@mixin fontdef($OpenSansPath, $FontType:"Regular") {
+  src:  url('#{$OpenSansPath}/#{$FontType}/OpenSans-#{$FontType}.eot');
+  src:  url('#{$OpenSansPath}/#{$FontType}/OpenSans-#{$FontType}.eot?#iefix') format('embedded-opentype'),
+        url('#{$OpenSansPath}/#{$FontType}/OpenSans-#{$FontType}.woff2') format('woff2'),
+        url('#{$OpenSansPath}/#{$FontType}/OpenSans-#{$FontType}.woff') format('woff'),
+        url('#{$OpenSansPath}/#{$FontType}/OpenSans-#{$FontType}.ttf?') format('truetype'),
+        url('#{$OpenSansPath}/#{$FontType}/OpenSans-#{$FontType}.svg##{$FontType}') format('svg');
 }

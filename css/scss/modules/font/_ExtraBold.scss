@@ -1,7 +1,7 @@
 /* BEGIN Extrabold */
 @font-face {
-  font-family: 'Carnac-ExtraBold';
-  @include fontdef($StrivePath, "ExtraBold");
+  font-family: 'Open Sans Extrabold';
+  @include fontdef($OpenSansPath, "ExtraBold");
   font-weight: 800;
   font-style: normal;
 }

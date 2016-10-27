@@ -1,84 +1,121 @@
 @charset "UTF-8";
 body {
-  background-color: #f7f8fb;
-  color: #5a6981;
-}
-
-.opacity-bg {
-  background-color: rgba(27, 206, 169, 0.9);
-}
-
-.odd-div {
-  background-color: rgba(15, 116, 95, 0.6);
-}
-.odd-div h1, .odd-div h2, .odd-div h3, .odd-div h4, .odd-div h5, .odd-div h6, .odd-div span, .odd-div a {
-  color: #6e6e6e;
-}
-.odd-div tr {
-  background-color: transparent;
-}
-.odd-div .title-panel {
-  border-bottom: solid 1px #b5b5b5;
+  background-color: #0e0b16;
+  color: #e7dfdd;
 }
 
 .required {
-  color: #b5b5b5;
+  color: #ed1e79;
 }
 
-.focus {
-  border: solid 2px #b5b5b5;
-  background-color: #6e6e6e;
-}
-
-/* BEGIN Regular */
-@font-face {
-  font-family: 'Carnac-Regular';
-  src: url("../fonts/Regular/Strive-Regular.eot");
-  src: url("../fonts/Regular/Strive-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Regular/Strive-Regular.woff2") format("woff2"), url("../fonts/Regular/Strive-Regular.woff") format("woff"), url("../fonts/Regular/Strive-Regular.ttf?") format("truetype"), url("../fonts/Regular/Strive-Regular.svg#Regular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-/* END Regular */
-/* BEGIN Extrabold */
-@font-face {
-  font-family: 'Carnac-ExtraBold';
-  src: url("../fonts/ExtraBold/Strive-ExtraBold.eot");
-  src: url("../fonts/ExtraBold/Strive-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/ExtraBold/Strive-ExtraBold.woff2") format("woff2"), url("../fonts/ExtraBold/Strive-ExtraBold.woff") format("woff"), url("../fonts/ExtraBold/Strive-ExtraBold.ttf?") format("truetype"), url("../fonts/ExtraBold/Strive-ExtraBold.svg#ExtraBold") format("svg");
-  font-weight: 800;
-  font-style: normal;
-}
-/* END Extrabold */
 /* BEGIN Light */
 @font-face {
-  font-family: 'ProximaNova-Light';
-  src: url("../fonts/Light/Strive-Light.eot");
-  src: url("../fonts/Light/Strive-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Light/Strive-Light.woff2") format("woff2"), url("../fonts/Light/Strive-Light.woff") format("woff"), url("../fonts/Light/Strive-Light.ttf?") format("truetype"), url("../fonts/Light/Strive-Light.svg#Light") format("svg");
+  font-family: 'Open Sans Light';
+  src: url("../fonts/Light/OpenSans-Light.eot");
+  src: url("../fonts/Light/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Light/OpenSans-Light.woff2") format("woff2"), url("../fonts/Light/OpenSans-Light.woff") format("woff"), url("../fonts/Light/OpenSans-Light.ttf?") format("truetype"), url("../fonts/Light/OpenSans-Light.svg#Light") format("svg");
   font-weight: 300;
   font-style: normal;
 }
 /* END Light */
+/* BEGIN Light Italic */
+@font-face {
+  font-family: 'Open Sans Light Italic';
+  src: url("../fonts/LightItalic/OpenSans-LightItalic.eot");
+  src: url("../fonts/LightItalic/OpenSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/LightItalic/OpenSans-LightItalic.woff2") format("woff2"), url("../fonts/LightItalic/OpenSans-LightItalic.woff") format("woff"), url("../fonts/LightItalic/OpenSans-LightItalic.ttf?") format("truetype"), url("../fonts/LightItalic/OpenSans-LightItalic.svg#LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic;
+}
+/* END Light Italic */
+/* BEGIN Regular */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/Regular/OpenSans-Regular.eot");
+  src: url("../fonts/Regular/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Regular/OpenSans-Regular.woff2") format("woff2"), url("../fonts/Regular/OpenSans-Regular.woff") format("woff"), url("../fonts/Regular/OpenSans-Regular.ttf?") format("truetype"), url("../fonts/Regular/OpenSans-Regular.svg#Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* END Regular */
+/* BEGIN Italic */
+@font-face {
+  font-family: 'Open Sans Italic';
+  src: url("../fonts/Italic/OpenSans-Italic.eot");
+  src: url("../fonts/Italic/OpenSans-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Italic/OpenSans-Italic.woff2") format("woff2"), url("../fonts/Italic/OpenSans-Italic.woff") format("woff"), url("../fonts/Italic/OpenSans-Italic.ttf?") format("truetype"), url("../fonts/Italic/OpenSans-Italic.svg#Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+/* END Italic */
+/* BEGIN Semibold */
+@font-face {
+  font-family: 'Open Sans Semibold';
+  src: url("../fonts/Semibold/OpenSans-Semibold.eot");
+  src: url("../fonts/Semibold/OpenSans-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Semibold/OpenSans-Semibold.woff2") format("woff2"), url("../fonts/Semibold/OpenSans-Semibold.woff") format("woff"), url("../fonts/Semibold/OpenSans-Semibold.ttf?") format("truetype"), url("../fonts/Semibold/OpenSans-Semibold.svg#Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+/* END Semibold */
+/* BEGIN Semibold Italic */
+@font-face {
+  font-family: 'Open Sans Semibold Italic';
+  src: url("../fonts/SemiboldItalic/OpenSans-SemiboldItalic.eot");
+  src: url("../fonts/SemiboldItalic/OpenSans-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SemiboldItalic/OpenSans-SemiboldItalic.woff2") format("woff2"), url("../fonts/SemiboldItalic/OpenSans-SemiboldItalic.woff") format("woff"), url("../fonts/SemiboldItalic/OpenSans-SemiboldItalic.ttf?") format("truetype"), url("../fonts/SemiboldItalic/OpenSans-SemiboldItalic.svg#SemiboldItalic") format("svg");
+  font-weight: 600;
+  font-style: italic;
+}
+/* END Semibold Italic */
+/* BEGIN Bold */
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url("../fonts/Bold/OpenSans-Bold.eot");
+  src: url("../fonts/Bold/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Bold/OpenSans-Bold.woff2") format("woff2"), url("../fonts/Bold/OpenSans-Bold.woff") format("woff"), url("../fonts/Bold/OpenSans-Bold.ttf?") format("truetype"), url("../fonts/Bold/OpenSans-Bold.svg#Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+/* END Bold */
+/* BEGIN Bold Italic */
+@font-face {
+  font-family: 'Open Sans Bold Italic';
+  src: url("../fonts/BoldItalic/OpenSans-BoldItalic.eot");
+  src: url("../fonts/BoldItalic/OpenSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/BoldItalic/OpenSans-BoldItalic.woff2") format("woff2"), url("../fonts/BoldItalic/OpenSans-BoldItalic.woff") format("woff"), url("../fonts/BoldItalic/OpenSans-BoldItalic.ttf?") format("truetype"), url("../fonts/BoldItalic/OpenSans-BoldItalic.svg#BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+/* END Bold Italic */
+/* BEGIN Extrabold */
+@font-face {
+  font-family: 'Open Sans Extrabold';
+  src: url("../fonts/ExtraBold/OpenSans-ExtraBold.eot");
+  src: url("../fonts/ExtraBold/OpenSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/ExtraBold/OpenSans-ExtraBold.woff2") format("woff2"), url("../fonts/ExtraBold/OpenSans-ExtraBold.woff") format("woff"), url("../fonts/ExtraBold/OpenSans-ExtraBold.ttf?") format("truetype"), url("../fonts/ExtraBold/OpenSans-ExtraBold.svg#ExtraBold") format("svg");
+  font-weight: 800;
+  font-style: normal;
+}
+/* END Extrabold */
+/* BEGIN Extrabold Italic */
+@font-face {
+  font-family: 'Open Sans Extrabold Italic';
+  src: url("../fonts/ExtraBoldItalic/OpenSans-ExtraBoldItalic.eot");
+  src: url("../fonts/ExtraBoldItalic/OpenSans-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/ExtraBoldItalic/OpenSans-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/ExtraBoldItalic/OpenSans-ExtraBoldItalic.woff") format("woff"), url("../fonts/ExtraBoldItalic/OpenSans-ExtraBoldItalic.ttf?") format("truetype"), url("../fonts/ExtraBoldItalic/OpenSans-ExtraBoldItalic.svg#ExtraBoldItalic") format("svg");
+  font-weight: 800;
+  font-style: italic;
+}
+/* END Extrabold Italic */
 body {
-  font-family: "Carnac-Regular";
+  font-family: "Open Sans";
 }
 
-.regular, h1, h2, h3, h4, h5, h6, .f1 fieldset .sub-title {
-  font-family: "Carnac-Regular";
+.regular, h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans";
 }
 
-.light, p, .btn.link, .item-input button.link, input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="date"], .f1 fieldset .radio label {
-  font-family: "ProximaNova-Light";
-}
-
-.medium {
-  font-family: "Carnac-Medium";
+.light, p, .btn.link, .item-input button.link, input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="date"] {
+  font-family: "Open Sans Light";
 }
 
 .bold {
-  font-family: "Carnac-Extrabold";
+  font-family: "Open Sans Extrabold";
 }
 
 .extrabold {
-  font-family: "Carnac-Extrabold";
+  font-family: "Open Sans Extrabold";
 }
 
 .upper {
@@ -91,7 +128,7 @@ body {
 }
 
 .border-focus, .btn:hover, .item-input button:hover, .btn:focus, .item-input button:focus {
-  border-color: #1bcea9;
+  border-color: #4717f6;
 }
 
 /* FONT PATH
@@ -1282,7 +1319,7 @@ body {
   content: "";
 }
 
-.fa-circle:before, input[type=radio].radio:checked + i:before {
+.fa-circle:before {
   content: "";
 }
 
@@ -3091,8 +3128,8 @@ fieldset {
 
 .checkbox-primary input[type="checkbox"]:checked + label::before,
 .checkbox-primary input[type="radio"]:checked + label::before {
-  background-color: #1bcea9;
-  border-color: #1bcea9;
+  background-color: #4717f6;
+  border-color: #4717f6;
 }
 .checkbox-primary input[type="checkbox"]:checked + label::after,
 .checkbox-primary input[type="radio"]:checked + label::after {
@@ -3101,8 +3138,8 @@ fieldset {
 
 .checkbox-danger input[type="checkbox"]:checked + label::before,
 .checkbox-danger input[type="radio"]:checked + label::before {
-  background-color: #f35b3f;
-  border-color: #f35b3f;
+  background-color: #ed1e79;
+  border-color: #ed1e79;
 }
 .checkbox-danger input[type="checkbox"]:checked + label::after,
 .checkbox-danger input[type="radio"]:checked + label::after {
@@ -3111,8 +3148,8 @@ fieldset {
 
 .checkbox-info input[type="checkbox"]:checked + label::before,
 .checkbox-info input[type="radio"]:checked + label::before {
-  background-color: #5a6981;
-  border-color: #5a6981;
+  background-color: #ff7bac;
+  border-color: #ff7bac;
 }
 .checkbox-info input[type="checkbox"]:checked + label::after,
 .checkbox-info input[type="radio"]:checked + label::after {
@@ -3121,8 +3158,8 @@ fieldset {
 
 .checkbox-warning input[type="checkbox"]:checked + label::before,
 .checkbox-warning input[type="radio"]:checked + label::before {
-  background-color: #f35b3f;
-  border-color: #f35b3f;
+  background-color: #ed1e79;
+  border-color: #ed1e79;
 }
 .checkbox-warning input[type="checkbox"]:checked + label::after,
 .checkbox-warning input[type="radio"]:checked + label::after {
@@ -3131,8 +3168,8 @@ fieldset {
 
 .checkbox-success input[type="checkbox"]:checked + label::before,
 .checkbox-success input[type="radio"]:checked + label::before {
-  background-color: #1bcea9;
-  border-color: #1bcea9;
+  background-color: #4717f6;
+  border-color: #4717f6;
 }
 .checkbox-success input[type="checkbox"]:checked + label::after,
 .checkbox-success input[type="radio"]:checked + label::after {
@@ -3141,8 +3178,8 @@ fieldset {
 
 .checkbox-primary input[type="checkbox"]:indeterminate + label::before,
 .checkbox-primary input[type="radio"]:indeterminate + label::before {
-  background-color: #1bcea9;
-  border-color: #1bcea9;
+  background-color: #4717f6;
+  border-color: #4717f6;
 }
 .checkbox-primary input[type="checkbox"]:indeterminate + label::after,
 .checkbox-primary input[type="radio"]:indeterminate + label::after {
@@ -3151,8 +3188,8 @@ fieldset {
 
 .checkbox-danger input[type="checkbox"]:indeterminate + label::before,
 .checkbox-danger input[type="radio"]:indeterminate + label::before {
-  background-color: #f35b3f;
-  border-color: #f35b3f;
+  background-color: #ed1e79;
+  border-color: #ed1e79;
 }
 .checkbox-danger input[type="checkbox"]:indeterminate + label::after,
 .checkbox-danger input[type="radio"]:indeterminate + label::after {
@@ -3161,8 +3198,8 @@ fieldset {
 
 .checkbox-info input[type="checkbox"]:indeterminate + label::before,
 .checkbox-info input[type="radio"]:indeterminate + label::before {
-  background-color: #5a6981;
-  border-color: #5a6981;
+  background-color: #ff7bac;
+  border-color: #ff7bac;
 }
 .checkbox-info input[type="checkbox"]:indeterminate + label::after,
 .checkbox-info input[type="radio"]:indeterminate + label::after {
@@ -3171,8 +3208,8 @@ fieldset {
 
 .checkbox-warning input[type="checkbox"]:indeterminate + label::before,
 .checkbox-warning input[type="radio"]:indeterminate + label::before {
-  background-color: #f35b3f;
-  border-color: #f35b3f;
+  background-color: #ed1e79;
+  border-color: #ed1e79;
 }
 .checkbox-warning input[type="checkbox"]:indeterminate + label::after,
 .checkbox-warning input[type="radio"]:indeterminate + label::after {
@@ -3181,8 +3218,8 @@ fieldset {
 
 .checkbox-success input[type="checkbox"]:indeterminate + label::before,
 .checkbox-success input[type="radio"]:indeterminate + label::before {
-  background-color: #1bcea9;
-  border-color: #1bcea9;
+  background-color: #4717f6;
+  border-color: #4717f6;
 }
 .checkbox-success input[type="checkbox"]:indeterminate + label::after,
 .checkbox-success input[type="radio"]:indeterminate + label::after {
@@ -3248,53 +3285,53 @@ fieldset {
 }
 
 .radio-primary input[type="radio"] + label::after {
-  background-color: #1bcea9;
+  background-color: #4717f6;
 }
 .radio-primary input[type="radio"]:checked + label::before {
-  border-color: #1bcea9;
+  border-color: #4717f6;
 }
 .radio-primary input[type="radio"]:checked + label::after {
-  background-color: #1bcea9;
+  background-color: #4717f6;
 }
 
 .radio-danger input[type="radio"] + label::after {
-  background-color: #f35b3f;
+  background-color: #ed1e79;
 }
 .radio-danger input[type="radio"]:checked + label::before {
-  border-color: #f35b3f;
+  border-color: #ed1e79;
 }
 .radio-danger input[type="radio"]:checked + label::after {
-  background-color: #f35b3f;
+  background-color: #ed1e79;
 }
 
 .radio-info input[type="radio"] + label::after {
-  background-color: #5a6981;
+  background-color: #ff7bac;
 }
 .radio-info input[type="radio"]:checked + label::before {
-  border-color: #5a6981;
+  border-color: #ff7bac;
 }
 .radio-info input[type="radio"]:checked + label::after {
-  background-color: #5a6981;
+  background-color: #ff7bac;
 }
 
 .radio-warning input[type="radio"] + label::after {
-  background-color: #f35b3f;
+  background-color: #ed1e79;
 }
 .radio-warning input[type="radio"]:checked + label::before {
-  border-color: #f35b3f;
+  border-color: #ed1e79;
 }
 .radio-warning input[type="radio"]:checked + label::after {
-  background-color: #f35b3f;
+  background-color: #ed1e79;
 }
 
 .radio-success input[type="radio"] + label::after {
-  background-color: #1bcea9;
+  background-color: #4717f6;
 }
 .radio-success input[type="radio"]:checked + label::before {
-  border-color: #1bcea9;
+  border-color: #4717f6;
 }
 .radio-success input[type="radio"]:checked + label::after {
-  background-color: #1bcea9;
+  background-color: #4717f6;
 }
 
 input[type="checkbox"].styled:checked + label:after,
@@ -3313,26 +3350,26 @@ input[type="radio"] .styled:checked + label::after {
 
 .btn, .item-input button {
   cursor: pointer;
-  font-family: "Carnac-Regular";
+  font-family: "Open Sans";
   font-size: 1.2em;
   line-height: 2em;
   padding: 0.25em 1em;
   margin: 1em 0;
-  background-color: #1bcea9;
-  color: #fff;
+  background-color: #4717f6;
+  color: #e7dfdd;
 }
 .btn:hover, .item-input button:hover, .btn:focus, .item-input button:focus {
-  color: #1bcea9;
+  color: #4717f6;
   background-color: transparent;
 }
 .btn.link, .item-input button.link {
   background-color: transparent;
   border: none;
-  color: #b5b5b5;
+  color: #ed1e79;
   padding: 0.7em 0;
 }
 .btn.link:hover, .item-input button.link:hover, .btn.link:focus, .item-input button.link:focus {
-  color: #6e6e6e;
+  color: #ff7bac;
 }
 .btn.right, .item-input button.right {
   text-align: center;
@@ -3350,10 +3387,10 @@ input[type="text"], input[type="password"], input[type="email"], input[type="tel
   padding: 0;
   outline-width: 0;
   border: none;
-  border-bottom: solid 1px #5a6981;
+  border-bottom: solid 1px #ff7bac;
   position: relative;
   background-color: transparent;
-  color: #5a6981;
+  color: #e7dfdd;
   z-index: 10;
   margin-top: 0.3em;
   border-radius: 0;
@@ -3361,20 +3398,20 @@ input[type="text"], input[type="password"], input[type="email"], input[type="tel
 }
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="date"]:focus {
   border: none;
-  border-bottom: solid 2px #5a6981;
+  border-bottom: solid 2px #ff7bac;
 }
 
 input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="date"]::-webkit-input-placeholder {
-  color: #5a6981;
+  color: #ff7bac;
 }
 input[type="text"]:-moz-placeholder, input[type="password"]:-moz-placeholder, input[type="email"]:-moz-placeholder, input[type="tel"]:-moz-placeholder, input[type="date"]:-moz-placeholder {
-  color: #5a6981;
+  color: #ff7bac;
 }
 input[type="text"]::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="date"]::-moz-placeholder {
-  color: #5a6981;
+  color: #ff7bac;
 }
 input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="date"]:-ms-input-placeholder {
-  color: #5a6981;
+  color: #ff7bac;
 }
 
 .item-input input {
@@ -3384,14 +3421,14 @@ input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-place
 }
 .item-input button {
   width: 25%;
-  color: #1bcea9;
+  color: #4717f6;
   background-color: transparent;
   display: inline-block;
   border-color: transparent;
 }
 .item-input button:hover {
   border-color: transparent;
-  color: #6e6e6e;
+  color: #e7dfdd;
 }
 .item-input button:focus {
   border-color: transparent;
@@ -3408,42 +3445,10 @@ input[type="checkbox"].icon {
   overflow: hidden;
   padding: 0;
 }
-input[type="checkbox"].icon.checkbox.disapproved:checked:before {
-  background-color: #505d72;
-  color: #5a6981;
-  padding: 0 0.1em;
-  font-size: 1.7em;
-}
-input[type="checkbox"].icon.checkbox.approved:before {
-  background-color: #505d72;
-  color: #5a6981;
-  padding: 0 0.1em;
-  font-size: 1.7em;
-}
-input[type="checkbox"].icon.checkbox.approved:checked:before {
-  background-color: #505d72;
-  color: #1bcea9;
-  padding: 0 0.1em;
-  font-size: 1.7em;
-}
 
 input[type="radio"] {
   height: 1.5em;
   width: 1.5em;
-}
-
-input[type=radio].radio + i {
-  visibility: hidden;
-  float: left;
-}
-input[type=radio].radio:checked:before {
-  visibility: hidden;
-}
-input[type=radio].radio:checked + i {
-  background-color: #505d72;
-  color: #5a6981;
-  padding: 0 0.1em;
-  font-size: 1.5em;
 }
 
 .form {
@@ -3464,79 +3469,4 @@ h4 {
 
 .center, .item-input button {
   text-align: center;
-}
-
-.f1 .f1-steps {
-  overflow: hidden;
-  margin-top: 1em;
-  text-align: center;
-  margin: 1em auto 0;
-  width: 5em;
-}
-.f1 .f1-steps .f1-step {
-  position: relative;
-  float: left;
-  width: 1em;
-  padding: 0 0.5em;
-  text-align: center;
-}
-.f1 .f1-steps .f1-step.activated .f1-step-icon {
-  background: #1bcea9;
-}
-.f1 .f1-steps .f1-step.active .f1-step-icon {
-  background: #1bcea9;
-}
-.f1 .f1-steps .f1-step p {
-  color: #ccc;
-}
-.f1 .f1-steps .f1-step.activated p, .f1 .f1-steps .f1-step.active p {
-  color: #f35b3f;
-}
-.f1 .f1-steps .f1-step .f1-step-icon {
-  display: inline-block;
-  width: 0.5em;
-  height: 0.5em;
-  margin-top: 4px;
-  background: #b5b5b5;
-  border-radius: 50%;
-}
-.f1 fieldset {
-  display: none;
-  text-align: left;
-}
-.f1 fieldset iframe {
-  width: 100%;
-  min-height: 40vh;
-  border: none;
-}
-.f1 fieldset .f1-buttons {
-  display: inline-block;
-  width: 100%;
-}
-.f1 fieldset .sub-title {
-  font-size: 1.2em;
-  color: #b5b5b5;
-}
-.f1 fieldset .sub-title.center, .f1 fieldset .item-input button.sub-title, .item-input .f1 fieldset button.sub-title {
-  margin-top: 1em;
-  text-align: center;
-}
-.f1 fieldset .invites {
-  padding: 0;
-}
-.f1 fieldset .invites li {
-  margin: 0.5em 0;
-}
-.f1 fieldset .invites li i {
-  float: left;
-}
-.f1 fieldset .invites li p {
-  float: left;
-  margin-top: 0.2em;
-}
-.f1 .form-footer {
-  text-align: right;
-}
-.f1 .input-error {
-  border-color: #f35b3f;
 }

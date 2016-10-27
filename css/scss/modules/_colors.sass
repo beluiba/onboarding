@@ -1,69 +1,25 @@
-$aqua: #1bcea9
-$blue: #5a6981
+$void: #0e0b16
+$jewel: #4717f6
+$stark: #e7dfdd
+$light-pink: #ff7bac
+$pink: #ed1e79
 $lightgray-color: #f7f8fb
 $gray-color: #b5b5b5
 $white: #fff
 $red: #f35b3f
 
-$primary-color: $aqua
-$secondary-color: $blue
-$darkgray-color: grayscale($secondary-color)
-$warning-color: $red
+$primary-color: $jewel
+$secondary-color: $light-pink
+$background-color: $void
+$warning-color: $pink
+$text: $stark
 
-//lighten
-$primary-color-light: lighten($primary-color, 10%)
-
-$secondary-color-light: lighten($secondary-color, 10%)
-
-
-//darken
-$primary-color-dark: darken($primary-color, 20%)
-
-$secondary-color-dark: darken($secondary-color, 5%)
-
-
-
-
-
-
-$opacity-bg: rgba($primary-color, 0.9)
-$opacity-bg-input-disabled: rgba($darkgray-color, 0.6)
-$opacity-white: rgba($white, 0.9)
-$opacity-bg-dark: rgba($primary-color-dark, 0.6)
-$opacity-bg-modal: rgba($primary-color-dark, 0.9)
-$opacity-bg-input: $opacity-white
-
-$text: $secondary-color
-$text-placeholder: $lightgray-color
-$opacity-focus: rgba($white, 0.5)
 
 body
-	background-color: $lightgray-color
+	background-color: $background-color
 	color: $text
 
 
-.opacity-bg
-	background-color: $opacity-bg
-
-//attributes
-
-.odd-div
-	background-color: $opacity-bg-dark
-
-	h1, h2, h3, h4, h5, h6, span, a
-		color: $darkgray-color
-
-	tr
-		background-color: transparent
-
-	.title-panel
-		border-bottom: solid 1px $gray-color
-
 
 .required
-	color: $gray-color
-
-
-.focus
-	border: solid 2px $gray-color
-	background-color: $darkgray-color
+	color: $warning-color

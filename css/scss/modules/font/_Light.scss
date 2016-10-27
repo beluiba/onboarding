@@ -1,7 +1,7 @@
 /* BEGIN Light */
 @font-face {
-  font-family: 'ProximaNova-Light';
-  @include fontdef($StrivePath, "Light");
+  font-family: 'Open Sans Light';
+  @include fontdef($OpenSansPath, "Light");
   font-weight: 300;
   font-style: normal;
 }

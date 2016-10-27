@@ -1,7 +1,7 @@
 {
-  "name": "onboarding",
+  "name": "Aventus",
   "version": "1.0.0",
-  "description": "onboarding template for Strive",
+  "description": "Aventus App",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/beluiba/onboarding"
+    "url": "https://github.com/beluiba/aventus"
   },
   "keywords": [
     "bootstrap"
@@ -31,7 +31,7 @@
   "author": "Belen Ibanez <belenibanezm@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/beluiba/onboarding/issues"
+    "url": "https://github.com/beluiba/aventus/issues"
   },
-  "homepage": "https://github.com/beluiba/onboarding"
+  "homepage": "https://github.com/beluiba/aventus"
 }

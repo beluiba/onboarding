@@ -1,7 +1,7 @@
 /* BEGIN Regular */
 @font-face {
-  font-family: 'Carnac-Regular';
-  @include fontdef($StrivePath, "Regular");
+  font-family: 'Open Sans';
+  @include fontdef($OpenSansPath, "Regular");
   font-weight: normal;
   font-style: normal;
 }
