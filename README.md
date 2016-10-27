@@ -1,2 +1,2 @@
-# onboarding
-onboarding with bootstrap + sass
+# aventus app
+app with bootstrap + sass
